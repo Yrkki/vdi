@@ -22,49 +22,49 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 choco --version
 
 echo Installing Storage...
-choco install dropbox --version 139.4.4896 -y
-choco install google-drive-file-stream --version 54.0.2.0 -y
-choco install cyberduck --version 8.2.0.36680 -y
+choco install dropbox -y
+choco install google-drive-file-stream -y
+choco install cyberduck -y
 
 echo Installing Browser...
-choco install googlechrome --version 97.0.4692.71 -y
-choco install firefox --version 95.0.2 -y
+choco install googlechrome -y
+choco install firefox -y
 
 echo Installing Platform...
-choco install nodejs-lts --version 16.13.1 -y
-#choco install nodejs.install --version 17.3.0 -y
-choco install heroku-cli --version 7.53.0.0 -y
-choco install terraform --version 1.1.2 -y
-choco install python --version 3.10.1 -y
-choco install docker-cli --version 19.03.12 -y
-choco install docker-machine --version 0.16.2 -y
-choco install cmake.install --version 3.22.1 -y
-#choco install cmake --version 3.22.1 -y
-choco install awssamcli --version 1.36.0 -y
-#choco install imagemagick --version 7.1.0.19 -y
-choco install imagemagick.app --version 7.1.0.19 -y
-choco install prometheus --version 2.2.1 -y
+choco install nodejs-lts -y
+#choco install nodejs.install -y
+choco install heroku-cli -y
+choco install terraform -y
+choco install python -y
+choco install docker-cli -y
+choco install docker-machine -y
+choco install cmake.install -y
+#choco install cmake -y
+choco install awssamcli -y
+#choco install imagemagick -y
+choco install imagemagick.app -y
+choco install prometheus -y
 
 echo Installing Storage...
-choco install git --version 2.34.1 -y
-choco install github-desktop --version 2.9.6 -y
-#choco install vscode-insiders --version 1.64.0.20220107 -y
-choco install vscode-insiders.install --version 1.64.0.20220107 -y
-#choco install vscode --version 1.63.2 -y
+choco install git -y
+choco install github-desktop -y
+#choco install vscode-insiders -y
+choco install vscode-insiders.install -y
+#choco install vscode -y
 
 echo Installing R...
-choco install r --version 4.1.2 -y
-choco install r.studio --version 2021.09.1 -y
+choco install r -y
+choco install r.studio -y
 
 echo Installing Productivity...
-choco install powertoys --version 0.53.1 -y
-choco install diffmerge --version 4.2.0.20170602 -y
-choco install putty.install --version 0.76 -y
+choco install powertoys -y
+choco install diffmerge -y
+choco install putty.install -y
 
 echo Installing Viewer...
-choco install irfanview --version 4.59 -y
-choco install irfanview-shellextension --version 1.06 -y
-choco install irfanviewplugins --version 4.59 -y
+choco install irfanview -y
+choco install irfanview-shellextension -y
+choco install irfanviewplugins -y
 
 echo Installing NPM Packages...
 echo ----------------------------------
