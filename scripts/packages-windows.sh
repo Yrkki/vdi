@@ -16,9 +16,9 @@ reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionWid
 echo Installing Chocolatey Packages...
 echo ----------------------------------
 echo Installing Chocolatey...
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+# Set-ExecutionPolicy Bypass -Scope Process -Force
+# [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+# iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco --version
 
 echo Installing Storage...
@@ -41,6 +41,7 @@ choco install docker-machine -y
 choco install cmake.install -y
 #choco install cmake -y
 choco install awssamcli -y
+choco install vcredist2010 -y
 #choco install imagemagick -y
 choco install imagemagick.app -y
 choco install prometheus -y
@@ -57,9 +58,12 @@ choco install r -y
 choco install r.studio -y
 
 echo Installing Productivity...
+choco install dotnetcore -y
 choco install powertoys -y
 choco install diffmerge -y
 choco install putty.install -y
+choco install cpu-z.install -y
+choco install gpu-z -y
 
 echo Installing Viewer...
 choco install irfanview -y
@@ -74,6 +78,9 @@ npm install -g figlet
 
 echo Clone repos...
 echo ----------------------------------
+repos=~/source/repos/test1
+mkdir -p $repos
+cd $repos
 #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 echo
 curl "https://api.github.com/users/Yrkki/repos" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
 
@@ -89,4 +96,4 @@ echo -n $'\\033[0;32m''Heroku: '$'\\033[0m' ; heroku --version
 
 echo -n $'\\033[0;32m''NPM: '$'\\033[0m' ; npm -v
 echo -n $'\\033[0;32m''NPM verbose:'$'\\033[0m' ; npm version
-echo -n $'\\033[0;32m''NPM package:'$'\\033[0m' ; npm v
+# echo -n $'\\033[0;32m''NPM package:'$'\\033[0m' ; npm v
