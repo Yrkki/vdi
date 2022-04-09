@@ -78,7 +78,7 @@ npm install -g figlet
 
 echo Clone repos...
 echo ----------------------------------
-repos=~/source/repos/test1
+repos=~/source/repos
 mkdir -p $repos
 cd $repos
 #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 echo
