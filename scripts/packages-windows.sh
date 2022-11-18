@@ -2,6 +2,10 @@
 echo Setting up OS and Applications...
 echo ==================================
 
+echo Configure parameters...
+echo ----------------------------------
+repos=~/source/repos
+
 echo Applying OS Settings...
 echo ----------------------------------
 #echo y | reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" /v CaptionHeight /t REG_SZ /d -225
@@ -20,6 +24,8 @@ echo Installing Chocolatey...
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 # iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco --version
+choco upgrade chocolatey
+choco --version
 
 echo Installing Storage...
 choco install dropbox -y
@@ -31,7 +37,7 @@ choco install googlechrome -y
 choco install firefox -y
 
 echo Installing Platform...
-choco install nodejs-lts -y
+choco install nodejs-lts -y --force --force-dependencies
 #choco install nodejs.install -y
 choco install heroku-cli -y
 choco install terraform -y
@@ -70,6 +76,14 @@ choco install irfanview -y
 choco install irfanview-shellextension -y
 choco install irfanviewplugins -y
 
+echo Upgrade all...
+echo ----------------------------------
+choco upgrade all -y
+
+# echo Refreshing OS Environment...
+# echo ----------------------------------
+# refreshenv
+
 echo Installing NPM Packages...
 echo ----------------------------------
 npm install -g @angular/cli
@@ -78,7 +92,6 @@ npm install -g figlet
 
 echo Clone repos...
 echo ----------------------------------
-repos=~/source/repos
 mkdir -p $repos
 cd $repos
 #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 echo
