@@ -87,7 +87,16 @@ winget "$verb" -e --id IrfanSkiljan.IrfanView
 echo
 
 echo === Hardware Tools... ====================================================================
+winget "$verb" -e --id Logitech.SetPoint
+winget "$verb" -e --id Logitech.LGS
+# winget "$verb" -e --id Logitech.GHUB
+# winget "$verb" -e --id Logitech.LogiTune
+# winget "$verb" -e --id Logitech.CameraSettings
 winget "$verb" -e --id ALCPU.CoreTemp
+echo
+
+echo === Miscellaneous Tools... ====================================================================
+# winget "$verb" -e --id 
 echo
 
 echo === Upgrade all... ====================================================================
