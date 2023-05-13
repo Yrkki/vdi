@@ -17,9 +17,8 @@ reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v CaptionWidth
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionHeight //t REG_SZ //d -225 //f
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionWidth //t REG_SZ //d -225 //f
 
-echo Installing Chocolatey Packages...
+echo Installing Package Manager...
 echo ----------------------------------
-echo Installing Chocolatey...
 # Set-ExecutionPolicy Bypass -Scope Process -Force
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 # iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -52,7 +51,7 @@ choco install vcredist2010 -y
 choco install imagemagick.app -y
 choco install prometheus -y
 
-echo Installing Storage...
+echo Installing Dev Tools...
 choco install git -y
 choco install github-desktop -y
 #choco install vscode-insiders -y
@@ -89,6 +88,7 @@ echo ----------------------------------
 npm install -g @angular/cli
 npm install -g npm-run-all
 npm install -g figlet
+npm install -g nodemon
 
 echo Clone repos...
 echo ----------------------------------
