@@ -96,6 +96,8 @@ mkdir -p $repos
 cd $repos
 #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 echo
 curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone
+#
+# . ./clone-repos.sh
 
 echo Reporting...
 echo ----------------------------------
