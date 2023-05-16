@@ -71,6 +71,7 @@ winget "$verb" -e --id Posit.RStudio
 echo
 
 echo === Installing Productivity... ====================================================================
+winget "$verb" -e --id Microsoft.Sysinternals.ProcessExplorer
 #winget "$verb" -e --id dotnetcore
 winget "$verb" -e --id Microsoft.PowerToys
 #winget "$verb" -e --id diffmerge
@@ -84,6 +85,10 @@ echo === Installing Viewer... ==================================================
 winget "$verb" -e --id IrfanSkiljan.IrfanView
 #winget "$verb" -e --id irfanview-shellextension
 #winget "$verb" -e --id irfanviewplugins
+echo
+
+echo === Graphics... ====================================================================
+winget "$verb" -e --id GIMP.GIMP
 echo
 
 echo === Hardware Tools... ====================================================================
@@ -116,11 +121,13 @@ npm install -g nodemon
 echo
 
 # echo === Clone repos... ====================================================================
-# # mkdir -p $repos
-# cd $repos
-# #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 echo
-# curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone
-# echo
+# # # mkdir -p $repos
+# # cd $repos
+# # #curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 echo
+# # curl "https://api.github.com/users/Yrkki/repos" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone
+# # echo
+#
+# . ./clone-repos.sh
 
 echo === Reporting... ====================================================================
 winget --version
