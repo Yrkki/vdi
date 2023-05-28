@@ -45,6 +45,10 @@ winget "$verb" -e --id Insecure.Nmap
 winget "$verb" -e --id angryziber.AngryIPScanner
 echo
 
+echo === Compute... ====================================================================
+winget "$verb" -e --id UCBerkeley.BOINC
+echo
+
 echo === Installing OS... ====================================================================
 winget "$verb" -e --name "Alpine WSL"
 winget "$verb" -e --id Canonical.Ubuntu.2204
