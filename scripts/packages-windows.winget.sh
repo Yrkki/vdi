@@ -33,11 +33,22 @@ echo === Installing Storage... =================================================
 #winget "$verb" -e --id Dropbox.Dropbox
 winget "$verb" -e --id Google.Drive
 winget "$verb" -e --id Iterate.Cyberduck
+winget "$verb" -e --id 7zip.7zip
+winget "$verb" -e --name "Hard Disk Sentinel Professional"
+winget "$verb" -e --id MiniTool.PartitionWizard.Free
+winget "$verb" -e --id AOMEI.Backupper
+winget "$verb" -e --id AOMEI.PartitionAssistant
 echo
 
-echo === Installing Browser... ====================================================================
-winget "$verb" -e --id Google.Chrome
-#winget "$verb" -e --id firefox
+echo === Installing Networking... ====================================================================
+winget "$verb" -e --id Insecure.Nmap
+winget "$verb" -e --id angryziber.AngryIPScanner
+echo
+
+echo === Installing OS... ====================================================================
+winget "$verb" -e --name "Alpine WSL"
+winget "$verb" -e --id Canonical.Ubuntu.2204
+winget "$verb" -e --id kalilinux.kalilinux
 echo
 
 echo === Installing Platform... ====================================================================
@@ -57,16 +68,24 @@ winget "$verb" -e --id ImageMagick.ImageMagick
 #winget "$verb" -e --id prometheus
 echo
 
+echo === Installing Browser... ====================================================================
+winget "$verb" -e --id Google.Chrome
+winget "$verb" -e --id Adobe.Acrobat.Reader.64-bit
+#winget "$verb" -e --id firefox
+echo
+
 echo === Installing Dev Tools... ====================================================================
-#winget "$verb" -e --id Git.Git
+winget "$verb" -e --id Microsoft.WindowsTerminal.Preview
+winget "$verb" -e --id Git.Git
 winget "$verb" -e --id GitHub.GitHubDesktop
-#winget "$verb" -e --id vscode-insiders
+winget "$verb" -e --id Microsoft.PowerShell.Preview
 winget "$verb" -e --id Microsoft.VisualStudioCode.Insiders
 winget "$verb" -e --id Microsoft.VisualStudioCode
 echo
 
 echo === Installing R... ====================================================================
 winget "$verb" -e --id RProject.R
+winget "$verb" -e --id RProject.Rtools
 winget "$verb" -e --id Posit.RStudio
 echo
 
@@ -89,15 +108,64 @@ echo
 
 echo === Graphics... ====================================================================
 winget "$verb" -e --id GIMP.GIMP
+winget "$verb" -e --id BlenderFoundation.Blender
+echo
+
+echo === AWS... ====================================================================
+winget "$verb" -e --id Amazon.AWSCLI
+winget "$verb" -e --id Amazon.SAM-CLI
+winget "$verb" -e --id Amazon.SessionManagerPlugin
+winget "$verb" -e --id Amazon.AWSVPNClient
+winget "$verb" -e --id ChefSoftware.Workstation
+winget "$verb" -e --id Serverless.Serverless
 echo
 
 echo === Hardware Tools... ====================================================================
+winget "$verb" -e --id ALCPU.CoreTemp
+echo
+
+echo === Installing Dell Drivers... ====================================================================
+winget "$verb" -e --id Dell.CommandUpdate.Universal
+winget "$verb" -e --id Dell.CommandConfigure
+winget "$verb" -e --id Dell.DisplayManager
+winget "$verb" -e --name "Dell Digital Delivery"
+winget "$verb" -e --name "My Dell"
+winget "$verb" -e --name "Media Suite Essentials for Dell"
+echo
+
+echo === Installing Intel Drivers... ====================================================================
+winget "$verb" -e --id Intel.IntelDriverAndSupportAssistant
+winget "$verb" -e --id Solidigm.StorageTool
+echo
+
+echo === Installing Logitech Drivers... ====================================================================
 winget "$verb" -e --id Logitech.SetPoint
 winget "$verb" -e --id Logitech.LGS
 # winget "$verb" -e --id Logitech.GHUB
 # winget "$verb" -e --id Logitech.LogiTune
 # winget "$verb" -e --id Logitech.CameraSettings
-winget "$verb" -e --id ALCPU.CoreTemp
+echo
+
+echo === Personalization... ====================================================================
+# winget "$verb" -e --id 9PF4KZ2VN4W9  # TranslucentTB
+echo
+
+echo === Office... ====================================================================
+winget "$verb" -e --id Adobe.Acrobat.Reader.64-bit
+echo
+
+echo === Media... ====================================================================
+winget "$verb" -e --id Spotify.Spotify
+winget "$verb" -e --id Daum.PotPlayer
+echo
+
+echo === Conferencing... ====================================================================
+winget "$verb" -e --id Cisco.CiscoWebexMeetings
+winget "$verb" -e --id SlackTechnologies.Slack
+echo
+
+echo === Security... ====================================================================
+winget "$verb" -e --id Malwarebytes.Malwarebytes
 echo
 
 echo === Miscellaneous Tools... ====================================================================
