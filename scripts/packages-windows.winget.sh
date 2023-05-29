@@ -150,6 +150,10 @@ winget "$verb" -e --id Logitech.LGS
 # winget "$verb" -e --id Logitech.CameraSettings
 echo
 
+echo === Benchmarking... ====================================================================
+winget "$verb" -e --id FinalWire.AIDA64.Extreme
+echo
+
 echo === Personalization... ====================================================================
 # winget "$verb" -e --id 9PF4KZ2VN4W9  # TranslucentTB
 echo
