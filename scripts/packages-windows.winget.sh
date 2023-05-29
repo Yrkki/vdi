@@ -174,6 +174,7 @@ echo
 
 echo === Security... ====================================================================
 winget "$verb" -e --id Malwarebytes.Malwarebytes
+winget "$verb" -e --id Microsoft.Sysinternals.Autoruns
 echo
 
 echo === Miscellaneous Tools... ====================================================================
