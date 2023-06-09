@@ -23,8 +23,13 @@ echo ----------------------------------
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 # iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco --version
-choco upgrade chocolatey
+choco upgrade chocolatey --version=1.4.0 --allow-downgrade
 choco --version
+
+echo Pinning Package Manager...
+choco pin list
+choco pin add --name=chocolatey --version=1.4.0
+choco pin list
 
 echo Installing Storage...
 choco install dropbox -y
