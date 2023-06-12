@@ -64,7 +64,7 @@ choco install git -y
 choco install github-desktop -y
 #choco install vscode-insiders -y
 choco install vscode-insiders.install -y
-#choco install vscode -y
+choco install vscode -y
 
 echo Installing R...
 choco install r -y
