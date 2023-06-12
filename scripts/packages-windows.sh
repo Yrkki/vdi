@@ -36,6 +36,9 @@ choco install dropbox -y
 choco install google-drive-file-stream -y
 choco install cyberduck -y
 
+echo Installing Networking...
+choco install angryip -y
+
 echo Installing Browser...
 choco install googlechrome -y
 choco install firefox -y
