@@ -165,6 +165,7 @@ echo
 echo === Media... ====================================================================
 winget "$verb" -e --id Spotify.Spotify
 winget "$verb" -e --id Daum.PotPlayer
+winget "$verb" -e --id OBSProject.OBSStudio
 echo
 
 echo === Conferencing... ====================================================================
