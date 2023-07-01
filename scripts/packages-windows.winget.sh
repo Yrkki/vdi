@@ -69,6 +69,7 @@ winget "$verb" -e --id Docker.DockerDesktop
 #winget "$verb" -e --id vcredist2010
 #winget "$verb" -e --id imagemagick
 winget "$verb" -e --id ImageMagick.ImageMagick
+winget "$verb" -e --id OliverBetz.ExifTool
 #winget "$verb" -e --id prometheus
 echo
 
