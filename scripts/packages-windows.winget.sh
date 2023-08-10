@@ -57,6 +57,7 @@ echo
 
 echo === Installing Platform... ====================================================================
 winget "$verb" -e --id OpenJS.NodeJS.LTS
+# winget upgrade -e --id Heroku.HerokuCLI --include-unknown
 winget "$verb" -e --id Heroku.HerokuCLI
 winget "$verb" -e --id Hashicorp.Terraform
 #winget "$verb" -e --id python

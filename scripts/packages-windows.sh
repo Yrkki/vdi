@@ -89,6 +89,7 @@ choco upgrade all -y
 
 # echo Refreshing OS Environment...
 # echo ----------------------------------
+# Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 # refreshenv
 
 echo Installing NPM Packages...
