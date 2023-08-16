@@ -66,6 +66,9 @@ choco install github-desktop -y
 choco install vscode-insiders.install -y
 choco install vscode -y
 
+echo Installing Provisioning Tools...
+choco install terraform -y
+
 echo Installing R...
 choco install r -y
 choco install r.studio -y

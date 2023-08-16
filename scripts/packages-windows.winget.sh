@@ -89,6 +89,10 @@ winget "$verb" -e --id Microsoft.VisualStudioCode.Insiders
 winget "$verb" -e --id Microsoft.VisualStudioCode
 echo
 
+echo === Installing Provisioning Tools... ====================================================================
+winget "$verb" -e --id Hashicorp.Terraform
+echo
+
 echo === Installing R... ====================================================================
 winget "$verb" -e --id RProject.R
 winget "$verb" -e --id RProject.Rtools
