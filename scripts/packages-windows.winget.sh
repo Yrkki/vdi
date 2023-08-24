@@ -20,14 +20,18 @@ echo
 # reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionWidth //t REG_SZ //d -225 //f
 # echo
 
-# echo === Installing Package Manager... ====================================================================
-# # Set-ExecutionPolicy Bypass -Scope Process -Force
-# # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-# # iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-# winget --version
-# winget upgrade winget
-# winget --version
-# echo
+echo === Installing Package Manager\(s\)... ====================================================================
+# Set-ExecutionPolicy Bypass -Scope Process -Force
+# [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+# iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco --version
+choco upgrade chocolatey --allow-downgrade
+choco --version
+echo
+
+echo === Configure Package Manager(s)... ====================================================================
+choco feature enable -n allowGlobalConfirmation
+echo
 
 echo === Installing Storage... ====================================================================
 #winget "$verb" -e --id Dropbox.Dropbox

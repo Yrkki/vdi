@@ -17,14 +17,17 @@ reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v CaptionWidth
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionHeight //t REG_SZ //d -225 //f
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" //v SmCaptionWidth //t REG_SZ //d -225 //f
 
-echo Installing Package Manager...
+echo Installing Package Manager\(s\)...
 echo ----------------------------------
 # Set-ExecutionPolicy Bypass -Scope Process -Force
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 # iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco --version
-choco upgrade chocolatey --version=1.4.0 --allow-downgrade
+choco upgrade chocolatey --allow-downgrade
 choco --version
+
+echo Configure Package Manager\(s\)...
+choco feature enable -n allowGlobalConfirmation
 
 echo Pinning Package Manager...
 choco pin list
