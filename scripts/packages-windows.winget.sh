@@ -115,9 +115,10 @@ winget "$verb" -e --id TechPowerUp.GPU-Z
 echo
 
 echo === Installing Viewer... ====================================================================
-winget "$verb" -e --id IrfanSkiljan.IrfanView
-#winget "$verb" -e --id irfanview-shellextension
-#winget "$verb" -e --id irfanviewplugins
+winget "$verb" -e --name IrfanView64
+# winget "$verb" -e --id IrfanSkiljan.IrfanView
+# #winget "$verb" -e --id irfanview-shellextension
+# #winget "$verb" -e --id irfanviewplugins
 echo
 
 echo === Graphics... ====================================================================
@@ -179,12 +180,12 @@ winget "$verb" -e --id OBSProject.OBSStudio
 echo
 
 echo === Conferencing... ====================================================================
-winget "$verb" -e --id Cisco.CiscoWebexMeetings
+# winget "$verb" -e --id Cisco.CiscoWebexMeetings
 winget "$verb" -e --id SlackTechnologies.Slack
 echo
 
 echo === Security... ====================================================================
-winget "$verb" -e --id Malwarebytes.Malwarebytes
+# winget "$verb" -e --id Malwarebytes.Malwarebytes
 winget "$verb" -e --id Microsoft.Sysinternals.Autoruns
 echo
 
@@ -205,6 +206,8 @@ echo === Installing NPM Packages... ============================================
 npm install -g @angular/cli
 npm install -g npm-run-all
 npm install -g figlet
+# npm install -g figlet-cli^1.0.0 --force
+# npm install -g semantic-release-cli
 npm install -g nodemon
 echo
 
