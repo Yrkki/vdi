@@ -32,7 +32,7 @@ echo.
 @REM powershell -executionpolicy remotesigned -File .\malwarebytes.ps1
 echo Running the Windows package manager...
 echo ------------------------------------------------------
-winget pin add --id Malwarebytes.Malwarebytes
+@REM winget pin add --id Malwarebytes.Malwarebytes
 winget upgrade --include-unknown --all
 echo.
 powershell -Command refreshenv
