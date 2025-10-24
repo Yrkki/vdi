@@ -181,12 +181,13 @@ echo
 
 echo === Conferencing... ====================================================================
 # winget "$verb" -e --id Cisco.CiscoWebexMeetings
-winget "$verb" -e --id SlackTechnologies.Slack
+# winget "$verb" -e --id SlackTechnologies.Slack
 echo
 
 echo === Security... ====================================================================
 # winget "$verb" -e --id Malwarebytes.Malwarebytes
-winget "$verb" -e --id Microsoft.Sysinternals.Autoruns
+# winget "$verb" -e --id Microsoft.Sysinternals.Autoruns
+winget "$verb" -e --id Microsoft.Sysinternals.Suite
 echo
 
 echo === Miscellaneous Tools... ====================================================================
