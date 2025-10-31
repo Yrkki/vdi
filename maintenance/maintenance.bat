@@ -36,7 +36,7 @@ echo ------------------------------------------------------
 winget upgrade --include-unknown --all
 echo.
 powershell -Command refreshenv
-winget upgrade --include-unknown
+winget upgrade
 echo.
 
 echo.
