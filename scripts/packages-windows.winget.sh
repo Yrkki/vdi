@@ -47,6 +47,7 @@ echo
 echo === Installing Networking... ====================================================================
 winget "$verb" --verbose -e --id Insecure.Nmap
 winget "$verb" --verbose -e --id angryziber.AngryIPScanner
+winget "$verb" --verbose -e --id RealVNC.VNCViewer
 echo
 
 echo === Compute... ====================================================================
@@ -65,17 +66,22 @@ winget "$verb" --verbose -e --id OpenJS.NodeJS.LTS
 winget "$verb" --verbose -e --id Heroku.HerokuCLI
 winget "$verb" --verbose -e --id Hashicorp.Terraform
 #winget "$verb" --verbose -e --id python
+winget "$verb" --verbose -e --id Python.Python.2
+winget "$verb" --verbose -e --id Python.Python.3.14
+winget "$verb" --verbose -e --id Python.Launcher
 winget "$verb" --verbose -e --id Docker.DockerDesktop
 #winget "$verb" --verbose -e --id docker-cli
 #winget "$verb" --verbose -e --id docker-machine
 #winget "$verb" --verbose -e --id cmake.install
 ##winget "$verb" --verbose -e --id cmake
+winget "$verb" --verbose -e --id Kitware.CMake
 #winget "$verb" --verbose -e --id awssamcli
 #winget "$verb" --verbose -e --id vcredist2010
 #winget "$verb" --verbose -e --id imagemagick
 winget "$verb" --verbose -e --id ImageMagick.ImageMagick
 winget "$verb" --verbose -e --id OliverBetz.ExifTool
 #winget "$verb" --verbose -e --id prometheus
+winget "$verb" --verbose -e --id RaspberryPiFoundation.RaspberryPiImager
 echo
 
 echo === Installing Browser... ====================================================================
@@ -91,6 +97,7 @@ winget "$verb" --verbose -e --id GitHub.GitHubDesktop
 winget "$verb" --verbose -e --id Microsoft.PowerShell.Preview
 winget "$verb" --verbose -e --id Microsoft.VisualStudioCode.Insiders
 winget "$verb" --verbose -e --id Microsoft.VisualStudioCode
+winget "$verb" --verbose -e --id Postman.Postman.Canary
 echo
 
 echo === Installing Provisioning Tools... ====================================================================
@@ -131,15 +138,18 @@ winget "$verb" --verbose -e --id Amazon.AWSCLI
 winget "$verb" --verbose -e --id Amazon.SAM-CLI
 winget "$verb" --verbose -e --id Amazon.SessionManagerPlugin
 winget "$verb" --verbose -e --id Amazon.AWSVPNClient
+winget "$verb" --verbose -e --id Amazon.WorkspacesClient
 winget "$verb" --verbose -e --id ChefSoftware.Workstation
 winget "$verb" --verbose -e --id Serverless.Serverless
 echo
 
 echo === Hardware Tools... ====================================================================
 winget "$verb" --verbose -e --id ALCPU.CoreTemp
+winget "$verb" --verbose -e --id SDAssociation.SDMemoryCardFormatter
 echo
 
 echo === Installing Dell Drivers... ====================================================================
+# winget "$verb" --verbose -e --id Dell.CommandUpdate
 winget "$verb" --verbose -e --id Dell.CommandUpdate.Universal
 winget "$verb" --verbose -e --id Dell.CommandConfigure
 winget "$verb" --verbose -e --id Dell.DisplayManager
