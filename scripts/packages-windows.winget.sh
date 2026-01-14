@@ -29,7 +29,7 @@ choco upgrade chocolatey --allow-downgrade
 choco --version
 echo
 
-echo === Configure Package Manager(s)... ====================================================================
+echo === Configure Package Manager\(s\)... ====================================================================
 choco feature enable -n allowGlobalConfirmation
 echo
 
@@ -177,6 +177,8 @@ echo
 
 echo === Personalization... ====================================================================
 # winget "$verb" --verbose -e --id 9PF4KZ2VN4W9  # TranslucentTB
+winget "$verb" --verbose -e --id Open-Shell.Open-Shell-Menu
+winget "$verb" --verbose -e --id valinet.ExplorerPatcher
 echo
 
 echo === Office... ====================================================================
