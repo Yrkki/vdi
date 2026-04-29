@@ -202,6 +202,10 @@ echo === Security... ===========================================================
 winget "$verb" --verbose -e --id Microsoft.Sysinternals.Suite
 echo
 
+echo === AI... ====================================================================
+winget "$verb" --verbose -e --id Anthropic.ClaudeCode
+echo
+
 echo === Miscellaneous Tools... ====================================================================
 # winget "$verb" --verbose -e --id ...
 echo
