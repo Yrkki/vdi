@@ -50,6 +50,7 @@ echo Installing Platform...
 choco install nodejs-lts -y --force --force-dependencies
 #choco install nodejs.install -y
 choco install heroku-cli -y
+choco install circleci-cli -y
 choco install terraform -y
 choco install python -y
 choco install docker-cli -y
