@@ -93,15 +93,16 @@ echo ------------------------------------------------------
 choco outdated
 choco upgrade all
 echo.
+powershell -Command "Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 powershell -Command refreshenv
 choco outdated
 echo.
 
-@REM powershell -executionpolicy remotesigned -File .\malwarebytes.ps1
+@REM powershell -executionpolicy remotesigned -File `.\malwarebytes.ps1
 echo Running the Windows package manager...
 echo ------------------------------------------------------
 @REM winget pin add --id Malwarebytes.Malwarebytes
-winget upgrade --include-unknown --all
+winget upgrade --include-unknown --all --silent --accept-package-agreements --accept-source-agreements --disable-interactivity
 echo.
 powershell -Command refreshenv
 winget upgrade

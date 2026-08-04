@@ -193,6 +193,7 @@ winget "$verb" --verbose -e --id OBSProject.OBSStudio
 echo
 
 echo === Conferencing... ====================================================================
+# # winget "$verb" --verbose -e --id Cisco.Cisco.Webex
 # winget "$verb" --verbose -e --id Cisco.CiscoWebexMeetings
 # winget "$verb" --verbose -e --id SlackTechnologies.Slack
 echo
@@ -213,7 +214,7 @@ echo
 
 echo === Upgrade all... ====================================================================
 echo Upgrade all...
-winget upgrade --include-unknown --all
+winget upgrade --include-unknown --all --silent --accept-package-agreements --accept-source-agreements --disable-interactivity
 echo
 
 # echo === Refreshing OS Environment... ====================================================================
